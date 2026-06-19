@@ -1,0 +1,19 @@
+# Pruebas de Estrés / Camino Infeliz
+
+Casos de entrada inválida contemplados por `chatbot_soporte.py` y la
+respuesta real implementada para cada uno.
+
+| # | Función | Caso de prueba | Entrada del usuario | Comportamiento del bot |
+|---|---|---|---|---|
+| 1 | `pedir_numero_cliente` | Número de cliente vacío | `` (Enter sin texto) | Muestra "El número de cliente no puede estar vacío." y vuelve a pedirlo |
+| 2 | `pedir_numero_cliente` | Número de cliente con letras | `abc123` | Muestra "El número de cliente solo puede contener dígitos." y vuelve a pedirlo |
+| 3 | `pedir_numero_cliente` | Cliente inexistente en clientes.csv | `999999` | Muestra "No encontramos ese número de cliente..." y vuelve a pedirlo |
+| 4 | `chatbot` (menú principal) | Opción fuera de rango | `9` | Muestra "Opción inválida. Por favor elegí una opción del menú." y vuelve a mostrar el menú |
+| 5 | `chatbot` (menú principal) | Opción no numérica | `hola` | Misma validación que el caso anterior (no matchea ninguna clave del diccionario ni "5") |
+| 6 | `pedir_confirmacion` | Respuesta ambigua a sí/no | `tal vez` | Muestra "Por favor respondé 's' o 'n'." y vuelve a preguntar |
+| 7 | `chatbot` (detalle del problema) | Detalle vacío al escalar | `` (Enter sin texto) | Guarda el ticket igual, con descripción "Sin detalle adicional." (no traba el flujo) |
+| 8 | `cargar_clientes` / `cargar_tickets` | Archivo CSV inexistente | — | Devuelve lista vacía en vez de fallar (`os.path.exists`) |
+
+> Para el PDF de entrega: completar esta tabla con capturas de pantalla
+> reales de la consola ejecutando cada caso (la consigna pide evidencia,
+> no solo la tabla de diseño).

@@ -80,5 +80,4 @@ entrada inválida contemplados (camino infeliz).
 ##  Uso de herramientas de IA
 
 Se utilizó IA como apoyo en el diseño del diagrama BPMN y en la estructuración
-del código. El detalle de prompts y respuestas está documentado en
-[`docs/consultas_ia/`](docs/consultas_ia/).
+del código. El detalle de prompts y respuestas está documentado en el PDF

@@ -1,0 +1,37 @@
+# Diccionario de Datos
+
+## Entidad: CLIENTES (archivo `clientes.csv`)
+
+Base de datos simulada de clientes existentes, usada para validar el número
+de cliente al inicio de la conversación.
+
+| Campo | Tipo de dato | Descripción | Ejemplo |
+|---|---|---|---|
+| numero_cliente | Texto (numérico, PK) | Identificador único del cliente. Se valida que exista en este archivo antes de continuar. | 100001 |
+| nombre | Texto | Nombre completo del cliente. | Juan Perez |
+| plan | Texto | Plan de servicio contratado. | Internet 300 Megas |
+| direccion | Texto | Dirección registrada del cliente. | Av. Rivadavia 1234 |
+
+## Entidad: TICKETS (archivo `tickets.csv`)
+
+Registro de cada consulta o reclamo generado durante la conversación con el bot.
+
+| Campo | Tipo de dato | Descripción | Ejemplo |
+|---|---|---|---|
+| id | Texto (PK) | Identificador único del ticket, formato TCK-XXX incremental. | TCK-001 |
+| numero_cliente | Texto (FK → clientes.numero_cliente) | Cliente que generó el ticket. | 100001 |
+| nombre | Texto | Nombre del cliente, copiado al momento de crear el ticket. | Juan Perez |
+| categoria | Texto | Opción del menú elegida por el cliente. | No tengo conexión a internet / se corta seguido |
+| descripcion | Texto largo | Detalle adicional ingresado por el cliente (solo si no se resolvió o eligió "Otro"). | Se corta cada 10 minutos |
+| nivel | Texto (enum) | Nivel de atención asignado al ticket. | Nivel 1 (autoservicio) / Nivel 2 |
+
+## Estructura interna: OPCIONES_SOPORTE (en memoria, no persiste en CSV)
+
+Diccionario embebido en el código con las categorías de consulta disponibles
+y su solución sugerida.
+
+| Campo | Tipo de dato | Descripción | Ejemplo |
+|---|---|---|---|
+| clave | Texto (numérico, PK) | Número de opción del menú. | "1" |
+| descripcion | Texto | Texto de la categoría mostrado en el menú. | Quiero cambiar la contraseña del WiFi |
+| solucion | Texto largo | Pasos sugeridos por el bot para resolver el problema. | "1. Ingresá a la Sucursal Virtual..." |

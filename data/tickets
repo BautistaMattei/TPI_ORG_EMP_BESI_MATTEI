@@ -1,0 +1,3 @@
+id,numero_cliente,nombre,categoria,descripcion,nivel
+TCK-001,100001,Juan Perez,No tengo conexiÃ³n a internet / se corta seguido,Resuelto con la soluciÃ³n sugerida por el bot.,Nivel 1 (autoservicio)
+TCK-002,100001,Juan Perez,Quiero cambiar la contraseÃ±a del WiFi,asdasjdhasjk,Nivel 2

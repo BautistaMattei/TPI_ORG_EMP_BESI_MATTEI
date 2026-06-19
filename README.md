@@ -27,11 +27,11 @@ Nivel 2 con ticket generado cuando no puede resolver.
 TPI_ORG_EMP_BESI_MATTEI/
 ├── README.md
 ├── .gitignore
-├── src/
-│   ├── chatbot_soporte.py
-│   └── data/
-│       ├── clientes.csv
-│       └── tickets.csv
+
+├── chatbot_soporte.py
+│  data/
+│      ── clientes.csv
+│      └── tickets.csv
 ├── docs/
 │   ├── diccionario_datos.md
 │   ├── manual_usuario.md

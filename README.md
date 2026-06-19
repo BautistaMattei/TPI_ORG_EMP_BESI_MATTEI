@@ -35,9 +35,7 @@ TPI_ORG_EMP_BESI_MATTEI/
 ├── docs/
 │   ├── diccionario_datos.md
 │   ├── manual_usuario.md
-│   ├── pruebas_estres.md
-│
-│   │   
+│   ├── pruebas_estres.md  
 │   └── TPI_Organizacion_Empresarial.pdf
 └── diagramas/
     ├── bpmn_soporte_tecnico_as_is.png

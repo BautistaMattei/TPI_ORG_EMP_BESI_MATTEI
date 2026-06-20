@@ -41,7 +41,7 @@ TPI_ORG_EMP_BESI_MATTEI/
     └── bpmn_soporte_tecnico_nivel1.png
 ```
 
-##  Cómo ejecutarlo
+##  Cómo ejecutarlo.
 
 Requisitos: Python 3.x (sin librerías externas).
 

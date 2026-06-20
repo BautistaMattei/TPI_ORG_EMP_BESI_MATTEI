@@ -27,7 +27,6 @@ Nivel 2 con ticket generado cuando no puede resolver.
 TPI_ORG_EMP_BESI_MATTEI/
 ├── README.md
 ├── .gitignore
-
 ├── chatbot_soporte.py
 │  data/
 │      ── clientes.csv
@@ -42,7 +41,7 @@ TPI_ORG_EMP_BESI_MATTEI/
     └── bpmn_soporte_tecnico_nivel1.png
 ```
 
-##  Cómo ejecutarlo
+##  Cómo ejecutarlo.
 
 Requisitos: Python 3.x (sin librerías externas).
 
@@ -80,5 +79,4 @@ entrada inválida contemplados (camino infeliz).
 ##  Uso de herramientas de IA
 
 Se utilizó IA como apoyo en el diseño del diagrama BPMN y en la estructuración
-del código. El detalle de prompts y respuestas está documentado en
-[`docs/consultas_ia/`](docs/consultas_ia/).
+del código. El detalle de prompts y respuestas está documentado en el PDF
